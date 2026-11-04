@@ -454,11 +454,11 @@ document.addEventListener("DOMContentLoaded", function () {
           const readableMessage = Array.isArray(providerMessage)
             ? providerMessage.map(function (item) { return item.message || String(item); }).join(" ")
             : (providerMessage && typeof providerMessage === "object" ? JSON.stringify(providerMessage) : providerMessage);
-          throw new Error(readableMessage || "Formspree did not accept the booking. Please check the form details and try again.");
+          throw new Error(readableMessage || "We did not accept the booking. Please check the form details and try again.");
         }
 
         status.classList.add("success");
-        status.textContent = "Your booking has been saved in My Bookings and submitted to Formspree. MOG MEDIAZ will contact you using the details provided.";
+        status.textContent = "Your booking has been saved in My Bookings and has been recieved by us. MOG MEDIAZ will contact you using the details provided.";
         form.reset();
         selectedServices.clear();
         renderSelectedServices();
