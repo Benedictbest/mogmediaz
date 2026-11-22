@@ -1,0 +1,11 @@
+{
+  "name": "mog-mediaz-site",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "nodemailer": "^6.10.1"
+  }
+}
